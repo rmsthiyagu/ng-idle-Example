@@ -33,7 +33,7 @@ export class AppComponent {
 
     // sets the ping interval to 15 seconds
     keepalive.interval(15);
-    keepalive.request("https://hackedbychinese.github.io1/ng2-idle/");
+    keepalive.request("https://hackedbychinese.github.io/ng2-idle/");
     keepalive.onPing.subscribe(response => {
       //console.log('Keepalive.ping() response status: ' + response.status);        
       this.lastPing = new Date();
